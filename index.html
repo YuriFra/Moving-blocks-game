@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Moving blocks game">
+    <meta name="keywords" content="moving blocks, collision detection, game">
+    <meta name="author" content="Yuri Franken">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Moving blocks game</title>
+</head>
+<body>
+
+<!-- Title -->
+<header>
+    <h1 id="gameName" class="font-weight-bold text-center py-2">MOVING BLOCKS GAME</h1>
+</header>
+
+<!-- Game area -->
+<main class="row d-flex">
+    <!-- Game area -->
+    <article id="canvas" class="m-5">
+        <img id="rabbit" src="img/rabbit1.png" alt="rabbit">
+        <img id="fox1" class="enemies" src="img/fox.png" alt="fox">
+        <img id="fox2" class="enemies" src="img/fox.png" alt="fox">
+        <img id="fox3" class="enemies" src="img/fox.png" alt="fox">
+    </article>
+    <aside class="text-center m-5">
+        <!-- Rules-->
+        <button class="btn mx-5 my-5" type="button" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">GAME RULES
+        </button>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body mt-2 mb-4">Move your player around and avoid collision with the enemies. On collision you lose a life.<br>Try to survive as long as possible.<br>Click reset to start over.
+            </div>
+        </div>
+        <!-- Timer -->
+        <section class="text-center">
+            <h2 id="score">Time: <span id="timer" class="timeGone">00 : 00</span></h2>
+            <h3 class="">Lives remaining</h3>
+            <h3 class="lives"></h3>
+            <h3 id="winText" class="my-2"></h3>
+        </section>
+    </aside>
+</main>
+<!-- Footer -->
+<footer class="mt-3">
+    <p class="text-center p-3 mb-0">2020 &copy; Yuri Franken</p>
+</footer>
+
+<!-- Script -->
+<script src="script.js"></script>
+<!-- jQuery, then Bootstrap JS -->
+
+</body>
+</html>

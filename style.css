@@ -1,0 +1,47 @@
+/*** general ***/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+    color: #3840db;
+    font-family: 'Space Mono', monospace;
+    background-color: #e7f819;
+    overflow-x: hidden;
+}
+h1 {
+    font-size: 4rem;
+    color: #fff;
+    background-color: #3840db;
+}
+/*** main ***/
+.btn {
+    color: #fff;
+    background-color: #3840db;
+}
+#canvas {
+    width: 800px;
+    height: 506px;
+    background-image: url("img/background.jpg");
+    background-color: darkcyan;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    border: 8px solid #3840db;
+    position: relative;
+
+}
+#rabbit {
+    width: 60px;
+    border-radius: 5px;
+}
+.enemies {
+    width: 100px;
+}
+footer {
+    color: #fff;
+    background-color: #3840db;
+}
