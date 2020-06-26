@@ -57,21 +57,19 @@ document.getElementById('start').addEventListener('click', () => {
             check.push(false);
         }
     }
-    setInterval(() => {
-        countLives();
-    },500);
+    setInterval(countLives,500);
 
     //detect which key is pressed & move player on keypress
     function movePlayer(e) {
         if (e.key === 'ArrowLeft' && parseInt(player.style.left) > 0) {
             player.style.left = parseInt(player.style.left) - moveP + 'px';
-            player.style.transform = 'rotateY(180deg)';
+            player.style.transform = 'rotateY(0deg)';
         } else if (e.key === 'ArrowUp' && parseInt(player.style.bottom) < 405) {
             e.preventDefault();
             player.style.bottom = parseInt(player.style.bottom) + moveP + 'px';
         } else if (e.key === 'ArrowRight' && parseInt(player.style.left) < 724) {
             player.style.left = parseInt(player.style.left) + moveP + 'px';
-            player.style.transform = 'rotateY(0deg)';
+            player.style.transform = 'rotateY(180deg)';
         } else if (e.key === 'ArrowDown' && parseInt(player.style.bottom) > 0) {
             e.preventDefault();
             player.style.bottom = parseInt(player.style.bottom) - moveP + 'px';
