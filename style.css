@@ -32,16 +32,16 @@ h1 {
     border-radius: 16px;
     border: 8px solid #3840db;
     position: relative;
-
 }
-#rabbit {
+#rabbit, .lives {
     width: 60px;
 }
 .enemies {
     width: 100px;
 }
-.lives {
-    width: 60px;
+#gameOver {
+    font-size: 3rem;
+    font-weight: bold;
 }
 footer {
     color: #fff;

@@ -26,38 +26,41 @@
 
 <!-- Game area -->
 <main>
-    <!-- Rules-->
-
-    <button class="btn dropdown-toggle mx-5 mt-3 float-right" type="button" data-toggle="collapse" data-target="#collapseExample"
-            aria-expanded="false" aria-controls="collapseExample">GAME RULES
-    </button>
-    <div class="collapse" id="collapseExample">
-        <div class="card card-body ml-5 mt-3">Move the rabbit around with the arrow keys on your keyboard and avoid being eaten by the foxes.<br>On collision with a fox you lose a life.<br>Try to survive as long as possible!
+    <section>
+        <!-- Rules-->
+        <button class="btn dropdown-toggle mx-5 mt-3 float-right" type="button" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">GAME RULES
+        </button>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body ml-5 mt-3">Move the rabbit around with the arrow keys on your keyboard and avoid being eaten by the foxes.<br>On collision with a fox you lose a life. Try to survive as long as possible!<br>Press reset to start over.
+            </div>
         </div>
-    </div>
-    <!-- Start button -->
-    <button id="start" class="btn ml-5 mt-3" type="button">START GAME</button>
+        <!-- Start button -->
+        <button id="start" class="btn ml-5 mt-3" type="button">START GAME</button>
+    </section>
+
     <article class="row d-flex">
         <!-- Game area -->
-        <section id="canvas" class="m-5">
+        <section id="canvas" class="mx-5 my-4">
             <img id="rabbit" src="img/rabbit1.png" alt="rabbit">
             <img id="fox1" class="enemies" src="img/fox.png" alt="fox">
             <img id="fox2" class="enemies" src="img/fox.png" alt="fox">
             <img id="fox3" class="enemies" src="img/fox.png" alt="fox">
         </section>
-        <section class="text-center m-5">
-
+        <section class="text-center m-4">
             <!-- Timer -->
-            <section class="text-center my-2">
-                <h2 id="score">Time: <label id="minutes">00</label>:<label id="seconds">00</label></h2>
-                <h2 class="text-center mb-3">Lives remaining</h2>
-                <div class="row mx-auto my-2">
-                    <img id="rabbit1" class="lives mx-2" src="img/rabbit1.png" alt="rabbit">
-                    <img id="rabbit2" class="lives mx-2" src="img/rabbit1.png" alt="rabbit">
-                    <img id="rabbit3" class="lives mx-2" src="img/rabbit1.png" alt="rabbit">
+            <section>
+                <h2 id="score" class="mt-5">Time: <label id="minutes">00</label>:<label id="seconds">00</label></h2>
+                <h2>Lives:</h2>
+                <div class="row my-4 ml-2">
+                    <img id="rabbit1" class="lives mx-3" src="img/rabbit1.png" alt="rabbit">
+                    <img id="rabbit2" class="lives mx-3" src="img/rabbit1.png" alt="rabbit">
+                    <img id="rabbit3" class="lives mx-3" src="img/rabbit1.png" alt="rabbit">
                 </div>
-                <h3 id="winText" class="my-2"></h3>
+                <h3 id="gameOver" class="my-2"></h3>
             </section>
+            <!-- Reset button -->
+            <button id="reset" class="btn my-5" type="button">RESET</button>
         </section>
     </article>
 </main>
