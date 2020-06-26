@@ -83,6 +83,7 @@ document.getElementById('start').addEventListener('click', () => {
     }
     document.body.addEventListener('keydown', movePlayer);
 
+    //move enemies chasing player
     function moveEnemy(enemy) {
         if (parseInt(enemy.style.left) < parseInt(player.style.left)) {
             enemy.style.left = parseInt(enemy.style.left) + moveE + 'px';
@@ -103,7 +104,7 @@ document.getElementById('start').addEventListener('click', () => {
     }
     loopEnemies = setInterval(iterateEnemies, 500);
 
-    //clearInterval when lives are gone
+    //subtract lives on collision & clearInterval when lives are finished
     let lives = document.querySelectorAll('.lives');
     let counter = -1;
     function countLives() {
@@ -121,6 +122,7 @@ document.getElementById('start').addEventListener('click', () => {
         }
     }
 });
+
 //reset button
 document.getElementById('reset').addEventListener('click', () => {
     location.reload();
