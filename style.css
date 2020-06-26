@@ -36,10 +36,12 @@ h1 {
 }
 #rabbit {
     width: 60px;
-    border-radius: 5px;
 }
 .enemies {
     width: 100px;
+}
+.lives {
+    width: 60px;
 }
 footer {
     color: #fff;
